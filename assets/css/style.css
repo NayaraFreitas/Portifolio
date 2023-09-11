@@ -1,0 +1,469 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* 'Bebas Neue', sans-serif; */
+
+/*
+cores
+#3d092c
+#ffffff
+#4f1540
+#eaebf2
+#622056
+#c2c3ce
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+     scroll-behavior: smooth; 
+}
+
+body{
+    background-color: #c2c3ce;
+}
+
+/* NavBar */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #ffff;
+    box-shadow: rgba(63, 8, 47, 0.4) 0px 2px 4px, rgba(61, 5, 36, 0.3) 0px 7px 13px -3px, rgba(65, 6, 47, 0.2) 0px -3px 0px inset;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+    z-index: 99999;
+}
+
+header > img {
+    position: fixed;
+    left: 13%;
+    height: 150px;
+    padding: 0;  
+} 
+
+.menu{
+    display: none; 
+   
+}
+
+.menu ul {
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+    border-radius: 5px;
+    
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    
+    Position: absolute;
+    top: 20%;
+    left: 70%;
+    margin: 1px;
+}
+
+
+.menu ul li {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: end;
+}
+
+.menu ul li a{
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    color: #622056c9;
+}
+
+.menu ul li a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    background: #622056;
+    height: 2px;
+    transition: all .8s ease-in-out;
+}
+
+.menu ul li a:hover{
+    color: #3d092c;
+}
+
+.menu ul li a:hover::before{
+    color: #3d092c;
+    background-color: #3d092c;
+    width: 100%;
+}
+
+#burguer{
+    color: #3d092c7a;
+    display: block;
+    position: fixed;
+    left: 80%;
+    padding: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#burguer:hover{
+    color: #3d092c;
+}
+
+
+/* Inicio Do Portifolio */
+.div-inicio{
+    display: flex;
+    flex-direction: column;
+
+    height: 500px;
+    width: 70vw;
+    margin: 200px 200px; 
+
+    background: hsla(0, 0%, 100%, 0.479);
+    border-radius: 15px;
+    box-shadow: rgba(93, 50, 67, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(64, 10, 31, 0.35) 0px -2px 6px 0px inset; 
+   
+    
+
+}
+
+.div-inicio > .nome-stack {
+   margin: 50px;
+}
+
+.div-inicio > .nome-stack > h2 {
+    font-size: 3em;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-inicio > .nome-stack > p {
+    font-size: 3.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-inicio > .nome-stack > p > span {
+    font-size: 1.2em;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Skills */
+.skills{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+
+
+
+
+/* LInkedin e Github */
+.div-inicio > .icones{
+    margin: 50px 50px 0;
+
+}
+
+.div-inicio > .icones > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-inicio > .icones > a > i {
+    margin-right:5px;
+}
+
+.div-inicio > .icones > .linkedin{
+    background-color: rgb(0, 119, 255);
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.div-inicio > .icones > .linkedin:hover{
+    background-color: #ffffff;
+    color:rgb(0, 119, 255) ;
+}
+
+.div-inicio > .icones > .github{
+    background-color: rgb(30, 31, 32);
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.div-inicio > .icones > .github:hover {
+    background-color: #ffffff;
+    color: rgb(30, 31, 32);
+}
+
+/* Sobre mim */
+
+.div-sobremim {
+    width: 100%;
+    height: 600px;
+    background-color: #3d092c;
+
+    box-shadow: rgba(50, 50, 93, 0.418) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.411) 0px 18px 36px -18px inset;
+}
+
+.div-sobremim > .sobremim{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 55px 0;
+}
+
+.div-sobremim > .sobremim > img{
+    height: 250px;
+    width: 250px;
+    margin: 150px 80px 0px 80px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+} 
+
+.div-sobremim > .sobremim > .information{
+    margin: 150px 80px 0px 0px ;
+}
+
+
+.div-sobremim > .sobremim > .information > h2 {
+    font-size: 4em;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+    text-shadow: #00000094 2px 3px 2px;
+}
+
+.div-sobremim > .sobremim > .information > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em ;
+    text-align: start;
+    color: #fff;
+}
+
+
+/* Projetos */
+
+
+
+#projetos > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    margin: 100px 190px;
+    position: relative;
+}
+
+#projetos > h2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right,#3d092c, #4f1540dc,#622056c9, #c2c3ce);
+    border-radius:2px ;
+    height: 4px;
+    width: 600px;
+}
+
+.container-projetos{
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 150px auto;
+}
+
+.projeto-wrapper {
+    overflow-x: auto;
+}
+
+.projeto-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.projeto {
+    display: flex;
+    flex-flow:row nowrap;
+    gap: 15px;
+}
+
+.left, .right{
+    position: absolute;
+    top: 150px;
+    left: -50px;
+    right: auto;
+    bottom: 0;
+
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    color: #ffffff;
+
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, #3d092c 100%) ;
+    opacity: 0.5;
+    transition: all 500ms ease-in-out;
+}
+
+.right {
+    left: auto;
+    right: -42px;
+    color: #ffffff;
+    background: linear-gradient(to right, transparent 0%, #3d092c 100%) ;
+}
+
+.left:hover, .right:hover {
+    opacity: 1;
+    color: #000000dc;
+
+}
+
+.item {
+    background-color: #fcfbfc;
+    border-radius: 10px;
+    display: flex;
+    width: 600px;
+    height: 300px;
+    flex-shrink: 0;
+    opacity: 0.6; 
+    transition: all 600ms ease-in-out;
+}
+
+.item img {
+    border-radius: 10px;
+}
+
+.item-information {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin:150px auto;
+
+}
+
+
+.item-information  h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #868686;
+    text-align: center;
+
+    animation: brilho 5s infinite ease-in;
+}
+
+
+
+.current-item{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+ 
+
+/*Footer*/
+
+footer{
+    display:flex ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #ffffff;
+    box-shadow: rgba(63, 8, 47, 0.4) 0px -2px 4px;
+}
+
+footer > p {
+    margin-right: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer > p > a.name {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    text-decoration: none;
+}
+
+footer > .icones > a.github {
+    color: rgb(30, 31, 32);
+}
+
+footer > .icones > a.github:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+footer > .icones > a.linkedin {
+    color: rgb(0, 119, 255);
+}
+
+footer > .icones > a.linkedin:hover{
+    background-color: rgb(0, 119, 255);
+    color: #fff;
+}
+
+
+@keyframes brilho {
+    0%{
+        color: rgba(98, 32, 86, 0.644);
+        text-shadow: 0px 0px 10px #622056;
+    }
+
+    25%{
+        color: rgba(79, 21, 64, 0.705);
+        text-shadow: 0px 0px 10px #4f1540;
+    }
+
+    50%{
+        color: rgb(61, 9, 44);
+        text-shadow: 0px 0px 20px #3d092c;
+        transform: scale(1.5);
+    }
+    75%{
+        color: rgba(79, 21, 64, 0.705);
+        text-shadow: 0px 0px 10px #4f1540;
+    }
+
+    100%{
+        color: rgb(98, 32, 86, 0.644);
+        text-shadow: 0px 0px 10px #622056;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
